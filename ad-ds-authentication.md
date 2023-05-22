@@ -1,8 +1,11 @@
 hostname anpassen
 
 $ sudo vim /etc/hosts
+
 $ sudo hostnamectl set-hostname "client.domain.org"
+
 $ sudo hostnamectl
+
 $ hostname -f
 
 
@@ -19,8 +22,11 @@ $ sudo apt -y install realmd libnss-sss libpam-sss sssd-tools adcli samba-common
 in domäne aufnehmen
 
 $ sudo realm discover hotel-hamburg-zentrum.de
+
 $ sudo realm join hotel-hamburg-zentrum.de
+
 $ sudo realm join -v hotel-hamburg-zentrum.de
+
 $ sudo realm list
 
 
@@ -37,6 +43,7 @@ $ sudo pam-auth-update --enable mkhomedir
 userdaten überprüfen
 
 $ sudo getent passwd "vor.nachname@domain.org"
+
 $ sudo login
 
 
